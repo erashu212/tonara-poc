@@ -5,13 +5,19 @@
   align-items: center;
   flex-flow: row wrap;
   margin-top: 20px;
+  .MuiContainer-root {
+    width: auto !important;
+    .MuiCard-root {
+      overflow: auto;
+    }
+  }
   .pr-10 {
-      padding-right: 10px;
+    padding-right: 10px;
   }
   .teacher-detail-container {
-      margin: 0 auto;
-      border-left: 1px solid green;
-      padding: 0 10px;
+    margin: 0 auto;
+    border-left: 1px solid green;
+    padding: 0 10px;
   }
   .flex-row {
     display: flex;
@@ -36,11 +42,14 @@
     }
   }
   .form-container {
-    display: inherit;
-    flex: 1 1 auto;
+    flex: 1 1 100%;
     margin-bottom: 10px;
+    display: flex;
     .form-search-box {
-      width: 85%;
+      width: 76%;
+      @media only screen and (max-width: 640px) {
+        width: 70%;
+      }
       display: inline-flex;
       margin-right: 20px;
     }
