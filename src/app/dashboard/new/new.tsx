@@ -38,7 +38,7 @@ export class NewTeacherContainer extends React.Component<NewTeacherContainerProp
                             aria-label="disabled tabs example"
                         >
                             <Tab label="Basic Details" />
-                            <Tab label="Advance Details" disabled={this.state.activeTab !== 1} />
+                            <Tab label="Advance Details"/>
                         </Tabs>
                     </Paper>
                     {this.state.activeTab === 0
@@ -50,8 +50,8 @@ export class NewTeacherContainer extends React.Component<NewTeacherContainerProp
         );
     }
 
-    private handleTabChange = () => {
-
+    private handleTabChange = (event: React.ChangeEvent<any>, value: any) => {
+        this.setState({activeTab: value});
     }
 
     private navigateToList = () => {
