@@ -1,0 +1,10 @@
+.add-container-view {
+    margin-top: 20px;
+    display: flex;
+    min-width: 480px;
+    width: 50%;
+    margin: 15px auto;
+    .MuiFormControl-root {
+       flex-basis: auto;
+    }
+}

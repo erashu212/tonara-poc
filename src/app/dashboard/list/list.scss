@@ -1,0 +1,48 @@
+.list-container-view {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 20px;
+  .pr-10 {
+      padding-right: 10px;
+  }
+  .teacher-detail-container {
+      margin: 0 auto;
+      border-left: 1px solid green;
+      padding: 0 10px;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .MuiCardContent-root {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    .MuiAvatar-circle {
+      margin-right: 30px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .form-container {
+    display: inherit;
+    flex: 1 1 auto;
+    margin-bottom: 10px;
+    .form-search-box {
+      width: 85%;
+      display: inline-flex;
+      margin-right: 20px;
+    }
+  }
+}

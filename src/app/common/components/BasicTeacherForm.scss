@@ -1,0 +1,11 @@
+.basic-form-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  .MuiFormControl-root {
+    margin-right: 20px !important;
+    width: fit-content;
+    flex: 1 1 auto;
+  }
+}
